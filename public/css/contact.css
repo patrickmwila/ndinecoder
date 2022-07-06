@@ -1,0 +1,15 @@
+.contact-container {
+  color: #dbedf3;
+  text-align: left;
+  background-color: #1e2127;
+  border-radius: 20px;
+  padding: 5rem;
+  margin-top: 40px;
+}
+.contact-container h1 {
+  text-align: center;
+}
+
+.submit-btn {
+  text-align: center;
+}

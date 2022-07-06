@@ -1,0 +1,49 @@
+.container {
+  text-align: center;
+}
+
+.profile {
+  background-color: #1e2127;
+  border-radius: 20px;
+  font-style: italic;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.profile-img {
+  border-radius: 64px;
+  margin: 20px 20px;
+  width: 128px;
+  height: 128px;
+  float: left;
+}
+
+.profile p {
+  padding-top: 20px;
+}
+.blog-highlights {
+  border-radius: 20px;
+  background-color: #1e2127;
+}
+
+.blog-highlights h1 {
+  color: #dbedf3;
+  padding: 20px 0;
+  font-size: xx-large;
+  text-shadow: 3px 0 #1e2127;
+}
+
+.blog-highlight {
+  margin: 20px;
+  border: 1px solid rgb(41, 50, 63);
+  transition: box-shadow 0.15s;
+}
+
+.blog-highlight:hover {
+  box-shadow: 10px 10px 8px rgb(13, 17, 23);
+  cursor: pointer;
+}
+
+.blog-highlight h2 {
+  /*color: rgb(209, 213, 219); */
+  color: #d19a66;
+}

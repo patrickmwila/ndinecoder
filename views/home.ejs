@@ -1,0 +1,44 @@
+<%- include('./partials/header'); -%>
+
+  <div class="container profile">
+    <div class="row">
+      <div class="col">
+        <img class="profile-img" src="/images/profile.jpeg" alt="profile-img">
+        <p><%= content %> </p>
+      </div>
+    </div>
+
+  </div>
+
+<div class="container blog-highlights">
+  <h1>Articles</h1>
+
+  <div class="row justify-content-center">
+    <!-- loop through array of objects (post) and render the content-->
+    <% post.forEach(element => { %>
+
+      <div class="col-lg-3 col-md-4 blog-highlight">
+        <h2><%= element.title %></h2>
+        <article id="<%= element._id %>"></article>
+          
+        <a href="/posts/<%= element._id %>">Read More</a>
+      </div>
+        <script>
+          if (typeof blogPreview === 'undefined' || typeof doc === 'undefined') {
+            let blogPreview;
+            let doc;
+          }
+          blogPreview = `<%= element.content.slice(0, 100) + ' ...' %>`;
+
+          // string string to html 
+          doc = new DOMParser().parseFromString(blogPreview, "text/html");
+
+          // select article by id and embedd formated html
+          $('#<%= element._id %>').html(doc.body.firstChild.data);
+        </script>
+    <% }) %>
+  </div>
+
+</div>
+
+<%- include('./partials/footer'); -%>

@@ -1,0 +1,38 @@
+.about-container {
+  background-color: #1e2127;
+  border-radius: 20px;
+  margin-top: 50px;
+  padding: 40px;
+}
+
+.profile-row {
+  background-color: rgb(13, 17, 23);
+}
+
+.about-container h1 {
+  padding: 20px 0;
+}
+.about-container img {
+  float: none;
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+  vertical-align: top;
+}
+
+.no-bullets {
+  text-align: left;
+  list-style: none;
+}
+
+.ability-title {
+  display: inline-block;
+  width: 60%;
+}
+
+.abilities-row,
+.profile-row {
+  border-radius: 20px;
+  background-color: rgb(13, 17, 23);
+  padding: 20px 0;
+}

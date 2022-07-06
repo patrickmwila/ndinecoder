@@ -1,0 +1,27 @@
+<%- include('./partials/header'); -%>
+
+<div class="container contact-container">
+  <h1>Get In Touch</h1>
+  <form action="/success">
+    <div class="form-group">
+      <label for="emailBox" class="form-label">Your Email</label>
+      <input id="emailBox" class="form-control" type="email" name="userEmail">
+    </div>
+
+    <div class="form-group">
+      <label for="userPassword" class="form-label">Your Password</label>
+      <input type="password" class="form-control" id="userPassword">
+    </div>
+
+    <div class="form-group">
+      <label for="user-msg" class="form-label">Your Message</label>
+      <textarea class="form-control" id="user-msg" rows="5" name="userMsg"></textarea>
+    </div>
+
+    <div class="submit-btn">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+</div>
+
+<%- include('./partials/footer'); -%>

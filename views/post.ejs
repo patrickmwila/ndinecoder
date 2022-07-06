@@ -1,0 +1,17 @@
+<%- include('./partials/header'); -%>
+
+<div class="container post-container">
+  <h1><%= title %> </h1>
+  <div class="content"></div>
+</div>
+
+<script>
+  let divElement = document.querySelector('.content');
+  let blogContent = `<%= content %>`;
+
+  // string string to html 
+  let doc = new DOMParser().parseFromString(blogContent, "text/html");
+  divElement.innerHTML = doc.body.firstChild.data;
+</script>
+
+<%- include('./partials/footer'); -%>

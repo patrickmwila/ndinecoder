@@ -1,0 +1,28 @@
+.post-container {
+  background-color: #1e2127;
+  border-radius: 20px;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.post-container h1 {
+  padding: 10px;
+  color: #d19a66;
+}
+.post-container h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #d19a66;
+}
+
+.post-container div {
+  padding: 10px;
+}
+
+.content div {
+  background-color: rgb(13, 17, 23);
+  border-radius: 10px;
+  color: #dbedf3;
+}
