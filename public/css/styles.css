@@ -27,7 +27,9 @@ body p {
 }
 
 .navbar-brand {
-  font-size: 2rem;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: Montserrat;
 }
 
 .navbar-nav li a:hover {
