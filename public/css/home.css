@@ -14,7 +14,7 @@
   margin: 20px 0;
   width: 128px;
   height: 128px;
-  text-align: center;
+  float: left;
 }
 
 .profile p {
