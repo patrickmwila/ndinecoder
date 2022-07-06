@@ -11,13 +11,15 @@
 }
 .profile-img {
   border-radius: 64px;
-  margin: 20px 20px;
+  margin: 20px 0;
   width: 128px;
   height: 128px;
+  text-align: center;
 }
 
 .profile p {
   padding-top: 20px;
+  margin: 0;
 }
 .blog-highlights {
   border-radius: 20px;
