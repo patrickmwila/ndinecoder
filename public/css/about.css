@@ -12,13 +12,6 @@
 .about-container h1 {
   padding: 20px 0;
 }
-.about-container img {
-  float: none;
-  width: 250px;
-  height: 250px;
-  border-radius: 125px;
-  vertical-align: top;
-}
 
 .no-bullets {
   text-align: left;
