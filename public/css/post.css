@@ -16,6 +16,9 @@ h5,
 h6 {
   color: #d19a66;
 }
+.post-container strong {
+  color: burlywood;
+}
 
 .post-container div {
   padding: 10px;

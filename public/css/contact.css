@@ -3,13 +3,52 @@
   text-align: left;
   background-color: #1e2127;
   border-radius: 20px;
-  padding: 5rem;
+  padding: 40px;
   margin-top: 40px;
 }
 .contact-container h1 {
   text-align: center;
 }
-
 .submit-btn {
   text-align: center;
 }
+
+/* .form-group {
+  margin-bottom: 1.5em;
+  transition: all 0.3s;
+}
+.form-label {
+  font-size: 0.75em;
+  color: var(--font-color);
+  display: block;
+  opacity: 0;
+  transition: all 0.3s;
+  transform: translateX(-50px);
+}
+.form-control {
+  box-shadow: none;
+  border-radius: 0;
+  border-color: #ccc;
+  border-style: none none solid none;
+  width: 100%;
+  font-size: 1.25em;
+  transition: all 0.6s;
+}
+.form-control::placeholder {
+  color: #aaa;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--font-hover-color);
+  outline: none;
+}
+.form-group:focus-within {
+  transform: scale(1.1, 1.1);
+}
+
+.form-control:invalid:focus {
+  border-color: red;
+}
+.form-control:valid:focus {
+  border-color: green;
+} */

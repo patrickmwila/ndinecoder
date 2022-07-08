@@ -1,6 +1,7 @@
 // imports
 const express = require('express');
 const bodyParser = require('body-parser');
+const nodemailer = require('nodemailer');
 
 const mongoose = require('mongoose');
 const Post = require(__dirname + '/schemas/Post.js');
@@ -55,9 +56,32 @@ app.get('/contact', (req, res) => {
   res.render('contact');
 });
 
-app.get('/success', (req, res) => {
-  // contact route
-  res.render('contact');
+app.post('/success', (req, res) => {
+  // contact route response
+  res.render('success');
+
+  const smtpTransport = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: 'patrickmwila.org@gmail.com',
+      pass: 'ouvbzyylsfjfpqog',
+    },
+  });
+
+  const mailOptions = {
+    from: req.body.email,
+    to: 'patrickmwila.org@gmail.com',
+    subject: req.body.subject,
+    text: req.body.message,
+  };
+
+  smtpTransport.sendMail(mailOptions, (error, response) => {
+    if (error) {
+      console.log(error.message);
+    } else {
+      console.log('mail sent');
+    }
+  });
 });
 
 app.get('/compose', (req, res) => {
