@@ -71,7 +71,7 @@ app.post('/success', (req, res) => {
   const mailOptions = {
     from: req.body.email,
     to: 'patrickmwila.org@gmail.com',
-    subject: req.body.subject,
+    subject: `${req.body.subject} | From: ${req.body.email}`,
     text: req.body.message,
   };
 
