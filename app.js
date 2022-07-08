@@ -79,7 +79,7 @@ app.post('/success', (req, res) => {
     if (error) {
       console.log(error.message);
     } else {
-      console.log('mail sent');
+      console.log(`mail sent: ${response.response}`);
     }
   });
 });
